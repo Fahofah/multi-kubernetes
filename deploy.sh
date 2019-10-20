@@ -1,6 +1,6 @@
 docker build -t fahriulucay1/multi-client:latest -t fahriulucay1/multi-client:$GIT_SHA -f ./client/Dockerfile ./client
-docker build -t fahriulucay1/multi-server:latest -t fahriulucay1/multi-server:$GIT_SHA -f ./server/Dockerifle ./server
-docker build -t fahriulucay1/multi-worker:latest -t fahriulucay1/multi-worker:$GIT_SHA -f ./worker/Dockerifle ./worker
+docker build -t fahriulucay1/multi-server:latest -t fahriulucay1/multi-server:$GIT_SHA -f ./server/Dockerfile ./server
+docker build -t fahriulucay1/multi-worker:latest -t fahriulucay1/multi-worker:$GIT_SHA -f ./worker/Dockerfile ./worker
 
 docker push fahriulucay1/multi-client:latest
 docker push fahriulucay1/multi-server:latest
